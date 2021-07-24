@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Header from "../components/Header/Header";
 import Image from "next/image";
 import { useSelector } from "react-redux";
@@ -34,6 +35,9 @@ function Checkout() {
   };
   return (
     <div className="bg-gray-100">
+      <Head>
+        <title>Checkout</title>
+      </Head>
       <Header />
       <main className="lg:flex max-w-screen-2xl mx-auto">
         <div className="flex-grow m-5 shadow-sm">
